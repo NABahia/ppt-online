@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "4.19.2",
+    "firebase-admin": "^13.5.0",
+    "nanoid": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.2",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build:frontend": "cd frontend && yarn install && yarn build",
+    "build:backend": "tsc",
+    "build": "yarn build:frontend && yarn build:backend",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\""
+  }
+}

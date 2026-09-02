@@ -1,0 +1,22 @@
+# Dependencias (aplica a la raíz y a la carpeta frontend)
+node_modules/
+
+# Carpetas de compilación de TypeScript y Parcel
+dist/
+frontend/dist/
+
+# Caché del empaquetador Parcel
+.parcel-cache/
+
+# Credenciales y variables de entorno (¡CRÍTICO!)
+.env
+key.json
+
+# Logs de errores de Yarn o NPM
+yarn-error.log
+yarn-debug.log*
+npm-debug.log*
+
+# Archivos ocultos del sistema operativo (Windows/Mac)
+Thumbs.db
+.DS_Store
